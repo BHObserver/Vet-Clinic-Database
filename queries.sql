@@ -14,6 +14,7 @@ SET species = 'unspecified';
 SELECT * FROM animals;
 ROLLBACK;
 SELECT * FROM animals;
+COMMIT;
 
 START TRANSACTION;
 UPDATE animals
@@ -22,22 +23,33 @@ WHERE name LIKE '%mon';
 UPDATE animals
 SET species = 'pokemon'
 WHERE species IS NULL;
+SELECT * FROM animals;
+COMMIT;
+
 
 START TRANSACTION;
 DELETE FROM animals;
 SELECT * FROM animals;
 ROLLBACK;
+SELECT * FROM animals;
+COMMIT;
 
 START TRANSACTION;
 DELETE FROM animals
 WHERE date_of_birth > '2022-01-01';
 
 SAVEPOINT my_savepoint;
+SELECT * FROM animals;
+COMMIT;
 
 UPDATE animals
 SET weight_kg = weight_kg * -1;
+SELECT * FROM animals;
+COMMIT;
 
 ROLLBACK TO my_savepoint;    
+SELECT * FROM animals;
+COMMIT;
 
 UPDATE animals
 SET weight_kg = weight_kg * -1
