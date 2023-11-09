@@ -2,7 +2,7 @@
 
 CREATE TABLE vet_clinic.animals (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
+    name VARCHAR(100) NOT NULL,
     date_of_birth DATE,
     escape_attempts INT,
     neutered BOOLEAN,
