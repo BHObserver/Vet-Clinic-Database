@@ -130,7 +130,7 @@ To run tests, run the command from this file step by step:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Al Amin Khan Shakil**
+👤 **Burhan Uddin**
 
 - GitHub: [Burhan Uddin](https://github.com/BHObserver/)
 - Twitter: [Burhan Uddin](https://twitter.com/BurhanU14173360)
