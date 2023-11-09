@@ -22,9 +22,6 @@ START TRANSACTION;
     UPDATE animals
         SET species = 'pokemon'
         WHERE species IS NULL;
-    UPDATE animals
-        SET species = 'pokemon'
-        WHERE species = 'Unknown';
 
 START TRANSACTION;
     DELETE FROM animals;
