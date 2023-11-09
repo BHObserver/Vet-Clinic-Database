@@ -8,3 +8,4 @@ CREATE TABLE vet_clinic.animals (
     neutered BOOLEAN,
     weight_kg DECIMAL(8, 2)
 );
+
