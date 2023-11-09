@@ -10,38 +10,39 @@ SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
 
 START TRANSACTION;
 UPDATE animals
-    SET species = 'unspecified';
+SET species = 'unspecified';
 SELECT * FROM animals;
 ROLLBACK;
 SELECT * FROM animals;
 
 START TRANSACTION;
-    UPDATE animals
-        SET species = 'digimon'
-        WHERE name LIKE '%mon';
-    UPDATE animals
-        SET species = 'pokemon'
-        WHERE species IS NULL;
+UPDATE animals
+SET species = 'digimon'
+WHERE name LIKE '%mon';
+UPDATE animals
+SET species = 'pokemon'
+WHERE species IS NULL;
 
 START TRANSACTION;
-    DELETE FROM animals;
+DELETE FROM animals;
 SELECT * FROM animals;
 ROLLBACK;
 
 START TRANSACTION;
-    DELETE FROM animals
-    WHERE date_of_birth > '2022-01-01';
+DELETE FROM animals
+WHERE date_of_birth > '2022-01-01';
 
 SAVEPOINT my_savepoint;
 
-    UPDATE animals
-    SET weight_kg = weight_kg * -1;
+UPDATE animals
+SET weight_kg = weight_kg * -1;
 
-ROLLBACK TO my_savepoint;
-    
-    UPDATE animals
-        SET weight_kg = weight_kg * -1
-        WHERE weight_kg < 0;
+ROLLBACK TO my_savepoint;    
+
+UPDATE animals
+SET weight_kg = weight_kg * -1
+WHERE weight_kg < 0;
+
 COMMIT;
 
 SELECT COUNT(*) AS total_animals FROM animals;
