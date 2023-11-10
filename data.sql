@@ -35,3 +35,11 @@ VALUES ('Blossom', '1998-10-13', 17, TRUE, 3, 'Unknown');
 -- Animal 7
 INSERT INTO animals (name, date_of_birth, weight_kg, neutered, escape_attempts, species) 
 VALUES ('Ditto', '2022-05-14', 22, TRUE, 4, 'Unknown');
+
+-- Insert data into the owners table
+INSERT INTO owners (full_name, age) VALUES ('Sam Smith', 34);
+INSERT INTO owners (full_name, age) VALUES ('Jennifer Orwell', 19);
+INSERT INTO owners (full_name, age) VALUES ('Bob', 45);
+INSERT INTO owners (full_name, age) VALUES ('Melody Pond', 77);
+INSERT INTO owners (full_name, age) VALUES ('Dean Winchester', 14);
+INSERT INTO owners (full_name, age) VALUES ('Jodie Whittaker', 38);
