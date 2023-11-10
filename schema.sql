@@ -10,3 +10,14 @@ CREATE TABLE vet_clinic.animals (
     species VARCHAR(100)
 );
 
+CREATE TABLE owners (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(255) NOT NULL,
+    age INT
+);
+
+CREATE TABLE species (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
+);
+
