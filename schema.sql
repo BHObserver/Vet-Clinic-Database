@@ -30,7 +30,7 @@ ADD FOREIGN KEY (owner_id) REFERENCES owners(id);
 
 SELECT * FROM animals;
 
--- Create the vets table
+
 CREATE TABLE vets (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -38,7 +38,7 @@ CREATE TABLE vets (
     date_of_graduation DATE
 );
 
--- Create the specializations join table
+
 CREATE TABLE specializations (
     vet_id INT,
     species_id INT,
@@ -47,3 +47,12 @@ CREATE TABLE specializations (
     FOREIGN KEY (species_id) REFERENCES species(id)
 );
 
+
+CREATE TABLE visits (
+    vet_id INT,
+    animal_id INT,
+    visit_date DATE,
+    PRIMARY KEY (vet_id, animal_id, visit_date),
+    FOREIGN KEY (vet_id) REFERENCES vets(id),
+    FOREIGN KEY (animal_id) REFERENCES animals(id)
+);
