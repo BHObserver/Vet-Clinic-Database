@@ -165,13 +165,12 @@ JOIN animals a ON v.animal_id = a.id
 ORDER BY v.visit_date DESC
 LIMIT 1;
 
-SELECT species.name AS suggested_specialty
-FROM visits
-JOIN vets ON visits.vet_id = vets.id
-JOIN animals ON visits.animal_id = animals.id
-JOIN species ON animals.species_id = species.id
-JOIN specializations ON vets.id = specializations.vet_id AND animals.species_id = specializations.species_id
-WHERE vets.name = 'Maisy Smith'
-GROUP BY animals.species_id
+SELECT s.name AS suggested_specialty
+FROM visits v
+JOIN vets vt ON v.vet_id = vt.id
+JOIN animals a ON v.animal_id = a.id
+JOIN species s ON a.species_id = s.id
+WHERE vt.name = 'Maisy Smith'
+GROUP BY a.species_id
 ORDER BY COUNT(*) DESC
 LIMIT 1;
