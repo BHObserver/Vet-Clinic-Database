@@ -38,7 +38,6 @@ CREATE TABLE vets (
     date_of_graduation DATE
 );
 
-
 CREATE TABLE specializations (
     vet_id INT,
     species_id INT,
@@ -46,7 +45,6 @@ CREATE TABLE specializations (
     FOREIGN KEY (vet_id) REFERENCES vets(id),
     FOREIGN KEY (species_id) REFERENCES species(id)
 );
-
 
 CREATE TABLE visits (
     vet_id INT,
