@@ -135,3 +135,10 @@ SELECT vt.name AS vet_name, s.name AS specialty
 FROM vets vt
 LEFT JOIN specializations sp ON vt.id = sp.vet_id
 LEFT JOIN species s ON sp.species_id = s.id;
+
+SELECT a.name AS animal_name
+FROM visits v
+JOIN vets vt ON v.vet_id = vt.id
+JOIN animals a ON v.animal_id = a.id
+WHERE vt.name = 'Stephanie Mendez'
+AND v.visit_date BETWEEN '2020-04-01' AND '2020-08-30';
