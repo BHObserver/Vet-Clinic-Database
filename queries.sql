@@ -164,3 +164,13 @@ JOIN vets vt ON v.vet_id = vt.id
 JOIN animals a ON v.animal_id = a.id
 ORDER BY v.visit_date DESC
 LIMIT 1;
+
+SELECT s.name AS suggested_specialty
+FROM visits v
+JOIN vets vt ON v.vet_id = vt.id
+JOIN animals a ON v.animal_id = a.id
+JOIN specializations sp ON vt.id = sp.vet_id AND a.species_id = sp.species_id
+WHERE vt.name = 'Maisy Smith'
+GROUP BY a.species_id
+ORDER BY COUNT(*) DESC
+LIMIT 1;
