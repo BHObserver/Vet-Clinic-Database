@@ -124,3 +124,9 @@ JOIN animals a ON v.animal_id = a.id
 WHERE vt.name = 'William Tatcher'
 ORDER BY v.visit_date DESC
 LIMIT 1;
+
+
+SELECT COUNT(DISTINCT v.animal_id) AS num_animals_seen
+FROM visits v
+JOIN vets vt ON v.vet_id = vt.id
+WHERE vt.name = 'Stephanie Mendez';
