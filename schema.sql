@@ -29,3 +29,12 @@ ADD FOREIGN KEY (species_id) REFERENCES species(id),
 ADD FOREIGN KEY (owner_id) REFERENCES owners(id);
 
 SELECT * FROM animals;
+
+-- Create the vets table
+CREATE TABLE vets (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    age INT,
+    date_of_graduation DATE
+);
+
