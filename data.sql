@@ -118,3 +118,4 @@ INSERT INTO visits (vet_id, animal_id, visit_date) VALUES
     ((SELECT id FROM vets WHERE name = 'William Tatcher'), (SELECT id FROM animals WHERE name = 'Blossom'), '2021-01-11');
 SELECT * FROM visits;
 COMMIT;
+

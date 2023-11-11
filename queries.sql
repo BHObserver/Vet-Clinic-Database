@@ -117,3 +117,10 @@ GROUP BY o.full_name
 ORDER BY animal_count DESC
 LIMIT 1;
 
+SELECT a.name AS last_animal_seen
+FROM visits v
+JOIN vets vt ON v.vet_id = vt.id
+JOIN animals a ON v.animal_id = a.id
+WHERE vt.name = 'William Tatcher'
+ORDER BY v.visit_date DESC
+LIMIT 1;
