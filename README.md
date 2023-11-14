@@ -139,6 +139,7 @@ To run tests, run the command from this file step by step:
 👤 **Kenneth Adutwum**
 
 - GitHub: [@githubhandle](https://github.com/Kwamay)
+- Twitter: [Burhan Uddin](https://twitter.com/Kwamay3)
 - LinkedIn: [Kwamay Adu](https://linkedin.com/in/кωαмαу-adu)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
