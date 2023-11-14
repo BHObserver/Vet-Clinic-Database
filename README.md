@@ -27,7 +27,7 @@
 
 
 
-**Vet Clinic Database** is a database created on PostgreSQL that stores data about animal clinic.
+**Vet Clinic Database** is a repository showing steps on how to create a database vet clinic and query data from the database along with normalization
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -71,12 +71,13 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
+This project was written on windows platform and used PostgreSQL version 16.
+
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
-
 
 
 ```sh
@@ -139,7 +140,7 @@ To run tests, run the command from this file step by step:
 👤 **Kenneth Adutwum**
 
 - GitHub: [@githubhandle](https://github.com/Kwamay)
-- Twitter: [Burhan Uddin](https://twitter.com/Kwamay3)
+- Twitter: [Kwamay3](https://twitter.com/Kwamay3)
 - LinkedIn: [Kwamay Adu](https://linkedin.com/in/кωαмαу-adu)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -199,6 +200,6 @@ I would like to thank Microverse to guide me to do this project.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
