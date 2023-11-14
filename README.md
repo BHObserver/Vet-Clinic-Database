@@ -27,7 +27,7 @@
 
 
 
-**Vet Clinic Database** is a database created on MySql that stores data about animal clinic.
+**Vet Clinic Database** is a database created on PostgreSQL that stores data about animal clinic.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -38,21 +38,21 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li>MySql</li>
+    <li>PostgreSQL</li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li>MySql Server</li>
+    <li>PostgreSQL Server</li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li>MySql</li>
+    <li>PostgreSQL</li>
   </ul>
 </details>
 
@@ -61,7 +61,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **SQL**
-- **MySql**
+- **PostgreSQL**
 - **vet_clinic Database**
 - **animals table**
 
@@ -80,7 +80,7 @@ In order to run this project you need:
 
 
 ```sh
-MySql on your local machine.
+PostgreSQL on your local machine.
 ```
 
 
@@ -191,7 +191,7 @@ I would like to thank Microverse to guide me to do this project.
 
 - **What knowledge Should I have to create a project like this?**
 
-  - You should have basic SQL, Database and MySQL Knowledge.
+  - You should have basic SQL, Database and PostgreSQL Knowledge.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
